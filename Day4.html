@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin:0px;
+    padding:0px;
+}
+.section1{
+    
+    height: 600px;
+    width: 100%;  
+    display: flex;
+}
+.int1{
+   
+    height: 600px;
+    width: 40%;
+    background-image: url(day4.image1.webp);
+     background-size:cover;
+}
+.int2{
+     
+    height: 600px;
+    width: 40%;
+    background-image: url(day4.image1.webp);
+     background-size:cover;
+}
+.int3{
+    
+    height: 600px;
+    width: 40%;
+    background-image: url(day4.image1.webp);
+     background-size:cover;
+      
+}
+ 
+.blue{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.692);
+    display: none;
+
+}
+.blue p{
+    font-size: 40px;
+    margin-top: 0px;
+    padding-top: 160px;
+    margin-left: 36px;
+    line-height: 45px;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+    
+ }
+.black{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.692);
+    display: none;
+}
+.black p{
+     
+    font-size: 40px;
+    margin-top: 0px;
+    padding-top: 160px;
+    margin-left: 36px;
+    line-height: 45px;
+    color: white;
+    padding-bottom: 30px;
+    text-align: center;
+ }
+.white{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.692);
+    display: none;
+
+}
+.white p{
+    font-size: 40px;
+    margin-top: 0px;
+    padding-top: 160px;
+    margin-left: 36px;
+    line-height: 45px;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+    
+ }
+.int1:hover.green{
+    display: block;
+}
+.int2:hover .black{
+    display: block;
+}
+
+ .int3:hover .white{
+    display: block;
+ }
+ .int1 button{
+    height: 50px;
+    width: 50%;
+    background-color: orange;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    margin-left: 150px;
+}
+
+ .int2 button{
+    height: 50px;
+    width: 50%;
+    background-color: orange;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    margin-left: 150px;
+}
+
+ 
+ 
+ .int3 button{
+    height: 50px;
+    width: 50%;
+    background-color: orange;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    margin-left: 180px;
+ }
+  
+.sec2{
+    background-image: url(desert.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+   
+    
+}
+ .phase{
+    height: 200px;
+    width: 100%;
+    
+ }
+ .phase h1{
+    width: 100%;
+    margin-left: 100px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 80px;
+ }
+ .phase p{
+    width: 100%;
+    margin-left: 150px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+ }
+ .full{
+    height: 600px;
+    width: 100%;
+     
+    display: flex;
+ }
+ .part1{
+    height:570px;
+    width: 20%;
+     
+    margin-left: 140px;
+    margin-top: 10px; 
+ }
+ .part1 img{
+    width: 50%;
+    height: 140px;
+    margin-left: 80px;
+    padding-top: 30px;
+ }
+ .part1 h2{
+    margin-left: 40px;
+    color: white;
+ }
+ .part1 p{
+    margin-left: 0px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-left: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    
+ }
+ .part1 button{
+    height: 40px;
+    width: 40%;
+    margin-left: 80px;
+    margin-top: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+ }
+ .part1:hover{
+    background-color: black;
+    opacity: 0.5;
+
+ }
+ .part2{
+    height:550px;
+    width: 20%;
+      
+    margin-left: 110px;
+    margin-top: 20px; 
+    text-align: center;
+    
+ }
+ .part2 img{
+    width: 50%;
+    height: 140px;
+    margin-left: 50px;
+    padding-top: 20px;
+ }
+ .part2 h2{
+    margin-left: 40px;
+    color: white;
+ }
+ .part2 p{
+    margin-left: 30px;
+    font-size: 20px;
+    line-height:28px;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+ }
+ .part2 button{
+    height: 40px;
+    width: 40%;
+    margin-left: 80px;
+    margin-top: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+ }
+ .part2:hover{
+    background-color: black;
+    opacity: 0.5;
+
+ }
+ .part3{
+    height:550px;
+    width: 20%;
+      
+    margin-left: 110px;
+    margin-top: 20px; 
+    text-align: center;
+    
+ }
+ .part3 img{
+    width: 50%;
+    height: 140px;
+    margin-left: 70px;
+    padding-top: 20px;
+ }
+ .part3 h2{
+    margin-left: 60px;
+    color: white;
+ }
+ .part3 p{
+    margin-left: 50px;
+    font-size: 20px;
+    line-height: 28px;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+
+ }
+ .part3 button{
+    height: 40px;
+    width: 40%;
+    margin-left: 80px;
+    margin-top: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+ }
+ .part3:hover{
+    background-color: black;
+    opacity: 0.5;
+
+ }
+.section3{
+    height: 600px;
+    width: 100%;
+    background-color: skyblue;
+    display: flex;
+    color: white;
+}
+.as1{
+    height: 600px;
+    width: 40%;
+     
+}
+.as1 h1{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 50px;
+    padding-top: 60px;
+}
+.as1 p{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.as1 button{
+    width: 35%;
+    height: 50px;
+    color: white;
+    margin-left: 50px;
+    background-color: orange;
+    border: 0px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.as2{
+     
+    height: 600px;
+    width: 10%;
+}
+.pic1{
+    height: 25px;
+    width: 40%;
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-left: 10px;
+}
+.pic2{
+    height: 30px;
+    width: 40%;
+    margin-top: 100px;
+    padding-top: 50px;
+    margin-left: 15px;
+}
+.pic3{
+    height: 30px;
+    width: 40%;
+    margin-top: 100px;
+    padding-top: 50px;
+    margin-left: 15px;
+}
+.pos1{
+    height: 500px;
+    width: 40%;
+}
+.post1{
+    height: 160px;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.post1 h1{
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+    padding-left: 30px;
+    margin-top: 60px;
+    color: white;
+}
+.post1 p{
+    margin-left: 40px;
+    padding-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+.post2{
+    height: 160px;
+    width: 100%;
+}
+.post2 h1{
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+    padding-left: 30px;
+    color: white;
+     
+}
+.post2 p{
+    margin-left: 40px;
+    padding-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+.post3{
+    height: 160px;
+    width: 100%;
+     
+    margin-top: 30px;
+
+}
+.post3 h1{
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+    padding-left: 30px;
+     color: white;
+}
+.post3 p{
+    margin-left: 40px;
+    padding-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+</style>
+</head>
+<body>
+    <div class="section1">
+        <div class="int1">
+    <div class="blue">
+        <p>"I want professional advice <br>
+            before I make a significant <br>
+            investment. Will it derail my <br>
+            financial goals?"</p>
+    <button>You can never be too careful</button>
+            
+    </div>
+       
+     </div>
+
+     <div class="int2">
+    <div class="black">
+        <p>"I want professional advice <br>
+            before I make a significant <br>
+            investment. Will it derail my <br>
+            financial goals?"</p>
+    <button>You can never be too careful</button>
+            
+    </div>
+       
+     </div>
+
+    <div class="int3">
+        <div class="white">
+        <p>"I want professional advice <br>
+            before I make a significant <br>
+            investment. Will it derail my <br>
+            financial goals?"</p>
+    <button>You can never be too careful</button>
+</div>
+    </div>
+    </div>
+
+
+<div class="section3">
+  <div class="as1">
+    <h1>We are <br>
+        independent <br>
+        financial planning & life <br>
+        management coaches</h1>
+        <p>You want to trust that your financial plans & <br> future are managedwell.</p>
+    <button>Schedule Call</button>
+  </div>
+  <div class="as2">
+    <div class="pic1">
+        <img src="https://omninos.co.in/lifeManaged/hand.png" alt="">
+    </div>
+    <div class="pic2">
+        <img src="https://omninos.co.in/lifeManaged/hand.png" alt="">
+    </div>
+    <div class="pic3">
+        <img src="https://omninos.co.in/lifeManaged/hand.png" alt="">
+    </div>
+  </div>
+<div class="pos1">
+    <div class="post1">
+    <h1>FIDUCIARY</h1>
+    <p>Big word...simple concept. At the core of our business is doing <br>
+        what’s best for YOU, not us</p>
+    </div>
+    <div class="post2">
+        <h1>FIDUCIARY</h1>
+        <p>Big word...simple concept. At the core of our business is doing <br>
+            what’s best for YOU, not us</p>
+        </div>
+        <div class="post3">
+            <h1>FIDUCIARY</h1>
+            <p>Big word...simple concept. At the core of our business is doing <br>
+                what’s best for YOU, not us</p>
+            </div>
+</div>
+</div>
+
+<div class="sec2">
+<div class="phase">
+    <h1>Life Managed Case Studies</h1>
+    <p>Hiii!!!!Sunshine. Have a great day dude</p>
+</div>
+<div class="full">
+<div class="part1">
+    <img src="https://omninos.co.in/lifeManaged/round-1.png" alt="">
+    <h2>WORK OPTIONAL</h2>
+<p>
+Mark and Jennifer don’t <br>
+have a set date for <br>
+retirement — not <br>
+  because they can’t retire,  <br>
+   but because they’re not <br> 
+   sure they ever want to  <br> 
+      stop working <br> 
+       completely.</p> 
+<div class="btn">
+<button>CLICK ME!</button>
+               </div>
+    </div>
+ <div class="part2">
+    <img src="https://omninos.co.in/lifeManaged/round-2.png" alt="">
+    <h2>RETIRED</h2>
+    <p>
+        Mark and Jennifer don’t <br>
+         have a set date for <br>
+          retirement — not <br>
+          because they can’t retire,  <br>
+           but because they’re not <br> 
+           sure they ever want to  <br> 
+              stop working <br> 
+               completely.</p> 
+        <div class="btn">
+        <button>CLICK ME!</button>
+</div>
+</div>
+<div class="part3">
+    <img src=https://omninos.co.in/lifeManaged/round-3.png alt="">
+    <h2>NEIRING</h2>
+    <p>
+        Mark and Jennifer don’t <br>
+         have a set date for <br>
+          retirement — not <br>
+          because they can’t retire,  <br>
+           but because they’re not <br> 
+           sure they ever want to  <br> 
+              stop working <br> 
+               completely.</p> 
+        <div class="btn">
+        <button>CLICK ME!</button>
+ 
+</div>
+
+</body>
+</html>
