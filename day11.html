@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    .product {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product h3 {
+      margin: 0 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Product List</h2>
+  <div id="productList"></div>
+
+  <script>
+    // Array of product objects
+    const products = [
+      { id: 1, name: "Laptop", price: 45000, category: "Electronics" },
+      { id: 2, name: "Headphones", price: 1500, category: "Electronics" },
+      { id: 3, name: "Chair", price: 1200, category: "Furniture" },
+      { id: 4, name: "Book", price: 300, category: "Stationery" }
+    ];
+
+    // DOM element where we will display the products
+    const productList = document.getElementById("productList");
+
+    // Function to render products
+    function renderProducts() {
+      products.forEach(product => {
+        const productDiv = document.createElement("div");
+        productDiv.classList.add("product");
+
+        productDiv.innerHTML = `
+          <h3>${product.name}</h3>
+          <p><strong>Category:</strong> ${product.category}</p>
+          <p><strong>Price:</strong> ₹${product.price}</p>
+        `;
+
+        productList.appendChild(productDiv);
+      });
+    }
+
+    // Call the function to display products
+    renderProducts();
+  </script>
+
+</body>
+</html>
