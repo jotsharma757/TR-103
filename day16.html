@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Filterable Product List</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 20px;
+    }
+    input, select {
+      padding: 8px;
+      margin: 10px 0;
+    }
+    .product {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Filterable Product List</h2>
+  
+  <input type="text" id="searchInput" placeholder="Search by name...">
+  <select id="categoryFilter">
+    <option value="">All Categories</option>
+    <option value="Electronics">Electronics</option>
+    <option value="Clothing">Clothing</option>
+    <option value="Books">Books</option>
+  </select>
+
+  <div id="productList"></div>
+
+  <script>
+    const products = [
+      { name: "iPhone 14", category: "Electronics" },
+      { name: "T-shirt", category: "Clothing" },
+      { name: "JavaScript Guide", category: "Books" },
+      { name: "Laptop", category: "Electronics" },
+      { name: "Jeans", category: "Clothing" },
+      { name: "Data Structures Book", category: "Books" },
+    ];
+
+    const searchInput = document.getElementById('searchInput');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const productList = document.getElementById('productList');
+
+    function renderProducts(filteredProducts) {
+      productList.innerHTML = filteredProducts.map(p => `
+        <div class="product">
+          <strong>${p.name}</strong> <br>
+          Category: ${p.category}
+        </div>
+      `).join('');
+    }
+
+    function filterProducts() {
+      const searchText = searchInput.value.toLowerCase();
+      const selectedCategory = categoryFilter.value;
+
+      const filtered = products.filter(p => {
+        const matchesText = p.name.toLowerCase().includes(searchText);
+        const matchesCategory = selectedCategory ? p.category === selectedCategory : true;
+        return matchesText && matchesCategory;
+      });
+
+      renderProducts(filtered);
+    }
+
+    searchInput.addEventListener('input', filterProducts);
+    categoryFilter.addEventListener('change', filterProducts);
+
+    // Initial render
+    renderProducts(products);
+  </script>
+
+</body>
+</html>
