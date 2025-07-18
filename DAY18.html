@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON + DOM Example</title>
+</head>
+<body>
+  <h2>User List</h2>
+  <ul id="userList"></ul>
+
+  <script>
+    // 1. Simulate fetching JSON data (in real case, use fetch() from an API)
+    const jsonData = [
+      { name: "Alice", age: 25 },
+      { name: "Bob", age: 30 },
+      { name: "Charlie", age: 22 }
+    ];
+
+    // 2. Get reference to the DOM element
+    const userList = document.getElementById("userList");
+
+    // 3. Loop through JSON data and create DOM elements
+    jsonData.forEach(user => {
+      const li = document.createElement("li");      // Create a list item
+      li.textContent = `${user.name} - Age: ${user.age}`;  // Set content
+      userList.appendChild(li);                      // Append to DOM
+    });
+  </script>
+</body>
+</html>
