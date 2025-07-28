@@ -37,8 +37,17 @@
   }
 }
 
-.main{
-  max-width: 1320px;
+
+.row{
+  width: 1320px;
   margin: auto;
-  background-color: blue;
+  display: flex;
+}
+
+.carditems{
+  flex-basis: 23%;
+  margin: 1%;
+  height: 200px;
+  background-color: #61dafb;
+  flex-wrap: wrap;
 }

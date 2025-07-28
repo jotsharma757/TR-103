@@ -1,41 +1,33 @@
-import logo from './logo.svg';
+ 
 import './App.css';
+import Header from "./Header";
+import Footer from "./Footer";
 
 function App() {
-  let name = "jot Sharma";
-  let u = [1,2,3,4];
-  let obj={
-    'name': "js",
-    'cName' : "MERN",
-    'desc' : 'React JS'
-  }
-  let status = true;
   return (
     <div className="main">
-      <h1>{name}</h1>
-      {
-        u.map((g) => {
-          return(
-            <div>{g}</div>
-          )
-        })
-      }
+      <Header/> 
 
-      <div>
-        {obj.cName}
+      <div className ='row'>
+       <Card/>
+       <Card/>
+       <Card/>
+       <Card/>
+       <Card/>
+       
+       
       </div>
- 
- <div>{10+20}</div>
+      <Footer/>
 
- {  (status) ?
- <h1 style={{color:"red", backgroundColor:"pink"}}>WElcomw to react</h1>
-  :
-  "" 
-}
-
-
+     
     </div>
   );
 }
 
 export default App;
+
+function Card(){
+  return(
+    <div className='carditems'>Card Div</div>
+  )
+}
