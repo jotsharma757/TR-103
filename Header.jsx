@@ -1,7 +1,10 @@
-function Header(){
+function Header({headerInfo,cname,children}){
+   // console.log(props.email)
     return(
      <div>
-        <h1>Welcome to Header</h1>
+        {children}
+        <h3>Header Part</h3>
+        <h1>Welcome to Header{props.email}</h1>
      </div>   
     )
 }
